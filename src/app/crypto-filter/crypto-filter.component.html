@@ -1,0 +1,9 @@
+<form method="get" action="" (submit)="applyFilter($event)">
+    <label>Value is </label>
+    <input type="radio" name="valueOption" [(ngModel)]="valueOption" value="LESS" id="valueOptionLess"><label for="valueOptionLess">less</label>
+    <input type="radio" name="valueOption" [(ngModel)]="valueOption" value="GREATER" id="valueOptionGreater"><label for="valueOptionGreater">greater </label>
+    <label for="value"> than </label>
+    <input type="number" name="value" [(ngModel)]="value" id="value">
+    <button type="reset">Reset</button>
+    <button type="submit">Apply</button>
+</form>
